@@ -3,443 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JKC Immo - L'immobilier à votre image</title>
+  <title>JKC Immo | L'immobilier à votre image</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      padding: 0;
       background: #f4f4f4;
       color: #333;
     }
     header {
-      background: #00695c;
-      color: white;
-      padding: 2rem;
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px 10px;
       text-align: center;
-      position: relative;
     }
     header img {
-      width: 80px;
-      height: auto;
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
+      max-height: 60px;
     }
-    header h1 {
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5em;
       margin: 0;
-      font-size: 2.8rem;
     }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
+    .section {
+      padding: 40px 20px;
+      text-align: center;
     }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #00695c;
-      margin-bottom: 1rem;
-    }
-    .about {
-      margin-bottom: 3rem;
-    }
-    .services {
+    .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 3rem;
+      gap: 20px;
+      padding: 20px;
     }
     .card {
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      padding: 1.5rem;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .card h3 {
-      margin-top: 0;
-      color: #00695c;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin-bottom: 3rem;
-    }
-    .gallery img {
+    .card img {
       width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       height: 180px;
       object-fit: cover;
     }
-    .testimonials {
-      background: #e0f2f1;
-      padding: 2rem;
-      border-radius: 10px;
-    }
-    .testimonial {
-      margin-bottom: 1.5rem;
-    }
-    .testimonial p {
-      font-style: italic;
-    }
-    .testimonial h4 {
-      margin: 0.5rem 0 0;
-      color: #004d40;
-    }
-    .contact {
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .contact a {
-      background: #00695c;
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+    .card h3 {
+      margin: 10px 0;
     }
     footer {
-      background: #004d40;
+      background: #2c3e50;
       color: white;
+      padding: 20px;
       text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="https://via.placeholder.com/80x80.png?text=JKC" alt="Logo JKC Immo">
-    <h1>JKC Immo</h1>
-    <p>L'immobilier à votre image – Bazounkpa, Ouidah</p>
-  </header>
+<header>
+  <img src="https://i.imgur.com/3VZ2V7Q.png" alt="Logo JKC Immo" />
+  <h1>JKC Immo</h1>
+  <p>L'immobilier à votre image</p>
+</header>
 
-  <section class="about">
-    <h2>Qui sommes-nous ?</h2>
-    <p>
-      JKC Immo est une entreprise spécialisée dans l’immobilier à Ouidah, plus précisément dans le quartier de Bazounkpa. 
-      Nous vous accompagnons dans vos projets avec professionnalisme et transparence : vente de parcelles bien structurées, location de maisons, appartements, boutiques et même terrains agricoles. 
-      Notre objectif : vous offrir un service à la hauteur de vos attentes, dans un climat de confiance.
-    </p>
-  </section>
+<nav>
+  <a href="#">Accueil</a>
+  <a href="#">Nos biens</a>
+  <a href="#">À propos</a>
+  <a href="#">Contact</a>
+</nav>
 
-  <section>
-    <h2>Nos Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Vente de parcelles</h3>
-        <p>Parcelles bien loties, avec documents à jour. Idéal pour construction ou investissement.</p>
-      </div>
-      <div class="card">
-        <h3>Locations de maisons</h3>
-        <p>Maisons disponibles à la location à court ou long terme, meublées ou non.</p>
-      </div>
-      <div class="card">
-        <h3>Appartements & boutiques</h3>
-        <p>Location de boutiques et appartements dans les zones accessibles et dynamiques.</p>
-      </div>
-      <div class="card">
-        <h3>Parcelles agricoles</h3>
-        <p>Terrains cultivables pour projets agricoles, adaptés à tous types de culture.</p>
-      </div>
-    </div<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JKC Immo - L'immobilier à votre image</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #00695c;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      position: relative;
-    }
-    header img {
-      width: 80px;
-      height: auto;
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #00695c;
-      margin-bottom: 1rem;
-    }
-    .about {
-      margin-bottom: 3rem;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 3rem;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      padding: 1.5rem;
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #00695c;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin-bottom: 3rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      height: 180px;
-      object-fit: cover;
-    }
-    .testimonials {
-      background: #e0f2f1;
-      padding: 2rem;
-      border-radius: 10px;
-    }
-    .testimonial {
-      margin-bottom: 1.5rem;
-    }
-    .testimonial p {
-      font-style: italic;
-    }
-    .testimonial h4 {
-      margin: 0.5rem 0 0;
-      color: #004d40;
-    }
-    .contact {
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .contact a {
-      background: #00695c;
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    footer {
-      background: #004d40;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-  </style>
-</head>
-<body>
+<section class="hero">
+  <h1>Faire de votre rêve immobilier une réalité</h1>
+  <p>Maisons, parcelles et opportunités agricoles à Ouidah</p>
+</section>
 
-  <header>
-    <img src="https://via.placeholder.com/80x80.png?text=JKC" alt="Logo JKC Immo">
-    <h1>JKC Immo</h1>
-    <p>L'immobilier à votre image – Bazounkpa, Ouidah</p>
-  </header>
+<section class="section">
+  <h2>Nos offres du moment</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Maison moderne">
+      <h3>Maison moderne à louer</h3>
+      <p>3 chambres, salon, cuisine. Quartier Bazounkpa - Ouidah</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600585153861-28f14e1a0ae8?auto=format&fit=crop&w=800&q=80" alt="Parcelle à vendre">
+      <h3>Parcelle à vendre</h3>
+      <p>250 m² bien lotie et accessible. Titre disponible</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Terrain agricole">
+      <h3>Terrain agricole</h3>
+      <p>Parcelle cultivable parfaite pour projets agro à Pahou</p>
+    </div>
+  </div>
+</section>
 
-  <section class="about">
-    <h2>Qui sommes-nous ?</h2>
-    <p>
-      JKC Immo est une entreprise spécialisée dans l’immobilier à Ouidah, plus précisément dans le quartier de Bazounkpa. 
-      Nous vous accompagnons dans vos projets avec professionnalisme et transparence : vente de parcelles bien structurées, location de maisons, appartements, boutiques et même terrains agricoles. 
-      Notre objectif : vous offrir un service à la hauteur de vos attentes, dans un climat de confiance.
-    </p>
-  </section>
+<footer>
+  <p>📍 Ouidah, Bazounkpa — 📞 +229 01 64 62 55 85</p>
+  <p>📧 jeunesseconsciente977@gmail.com</p>
+  <p>© 2025 JKC Immo. Tous droits réservés.</p>
+</footer>
 
-  <section>
-    <h2>Nos Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Vente de parcelles</h3>
-        <p>Parcelles bien loties, avec documents à jour. Idéal pour construction ou investissement.</p>
-      </div>
-      <div class="card">
-        <h3>Locations de maisons</h3>
-        <p>Maisons disponibles à la location à court ou long terme, meublées ou non.</p>
-      </div>
-      <div class="card">
-        <h3>Appartements & boutiques</h3>
-        <p>Location de boutiques et appartements dans les zones accessibles et dynamiques.</p>
-      </div>
-      <div class="card">
-        <h3>Parcelles agricoles</h3>
-        <p>Terrains cultivables pour projets agricoles, adaptés à tous types de culture.</p>
-      </div>
-    </div<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JKC Immo - L'immobilier à votre image</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #00695c;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      position: relative;
-    }
-    header img {
-      width: 80px;
-      height: auto;
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #00695c;
-      margin-bottom: 1rem;
-    }
-    .about {
-      margin-bottom: 3rem;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 3rem;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      padding: 1.5rem;
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #00695c;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      margin-bottom: 3rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      height: 180px;
-      object-fit: cover;
-    }
-    .testimonials {
-      background: #e0f2f1;
-      padding: 2rem;
-      border-radius: 10px;
-    }
-    .testimonial {
-      margin-bottom: 1.5rem;
-    }
-    .testimonial p {
-      font-style: italic;
-    }
-    .testimonial h4 {
-      margin: 0.5rem 0 0;
-      color: #004d40;
-    }
-    .contact {
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .contact a {
-      background: #00695c;
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    footer {
-      background: #004d40;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <img src="https://via.placeholder.com/80x80.png?text=JKC" alt="Logo JKC Immo">
-    <h1>JKC Immo</h1>
-    <p>L'immobilier à votre image – Bazounkpa, Ouidah</p>
-  </header>
-
-  <section class="about">
-    <h2>Qui sommes-nous ?</h2>
-    <p>
-      JKC Immo est une entreprise spécialisée dans l’immobilier à Ouidah, plus précisément dans le quartier de Bazounkpa. 
-      Nous vous accompagnons dans vos projets avec professionnalisme et transparence : vente de parcelles bien structurées, location de maisons, appartements, boutiques et même terrains agricoles. 
-      Notre objectif : vous offrir un service à la hauteur de vos attentes, dans un climat de confiance.
-    </p>
-  </section>
-
-  <section>
-    <h2>Nos Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Vente de parcelles</h3>
-        <p>Parcelles bien loties, avec documents à jour. Idéal pour construction ou investissement.</p>
-      </div>
-      <div class="card">
-        <h3>Locations de maisons</h3>
-        <p>Maisons disponibles à la location à court ou long terme, meublées ou non.</p>
-      </div>
-      <div class="card">
-        <h3>Appartements & boutiques</h3>
-        <p>Location de boutiques et appartements dans les zones accessibles et dynamiques.</p>
-      </div>
-      <div class="card">
-        <h3>Parcelles agricoles</h3>
-        <p>Terrains cultivables pour projets agricoles, adaptés à tous types de culture.</p>
-      </div>
-    </div
+</body>
+</html>
