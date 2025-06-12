@@ -1,75 +1,81 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JKC Immo | L'immobilier à votre image</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-    header { background: #2c3e50; color: #fff; padding: 20px; text-align: center; }
-    nav { background: #34495e; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 10px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    .hero { background: url('https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; color: white; padding: 100px 20px; text-align: center; }
-    .section { padding: 40px 20px; text-align: center; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    .card img { width: 100%; height: 180px; object-fit: cover; }
-    footer { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-    form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 10px; }
-    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
-    button { background: #27ae60; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; }
-    .lang-switch { position: fixed; top: 10px; right: 10px; }
-  </style>
+  <title>JKC Immo - L'immobilier à votre image</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body><div class="lang-switch">
-  <button onclick="setLang('fr')">🇫🇷</button>
-  <button onclick="setLang('en')">🇬🇧</button>
-</div><header>
-  <h1 data-fr="JKC Immo" data-en="JKC Real Estate">JKC Immo</h1>
-  <p data-fr="L'immobilier à votre image" data-en="Real estate, your way">L'immobilier à votre image</p>
-</header><nav>
-  <a href="#" data-fr="Accueil" data-en="Home">Accueil</a>
-  <a href="#offres" data-fr="Nos biens" data-en="Properties">Nos biens</a>
-  <a href="#temoignages" data-fr="Témoignages" data-en="Testimonials">Témoignages</a>
-  <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
-</nav><section class="hero">
-  <h2 data-fr="Faites de votre rêve immobilier une réalité" data-en="Make your real estate dream a reality">Faites de votre rêve immobilier une réalité</h2>
-</section><section id="offres" class="section">
-  <h2 data-fr="Nos offres" data-en="Our Listings">Nos offres</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Maison moderne">
-      <h3 data-fr="Maison moderne à louer" data-en="Modern House for Rent">Maison moderne à louer</h3>
+<body>
+  <header>
+    <h1>JKC Immo</h1>
+    <p>L'immobilier à votre image</p>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#biens">Biens</a>
+      <a href="#temoignages">Témoignages</a>
+      <a href="#contact">Contact</a>
+      <a href="?lang=en">English</a>
+    </nav>
+  </header>
+
+  <section id="accueil">
+    <h2>Bienvenue chez JKC Immo</h2>
+    <p>Location et vente de maisons, parcelles et boutiques à Ouidah (Bazounkpa). Qualité et service au cœur de notre engagement.</p>
+  </section>
+
+  <section id="biens">
+    <h2>Nos logements disponibles</h2>
+    <div class="galerie">
+      <div class="maison">
+        <img src="images/maison_ext1.jpg" alt="Maison avec plusieurs chambres à louer">
+        <p>Maison 2–3 chambres, couloir, cuisine, douche → Quartier calme, Bazounkpa.</p>
+      </div>
+      <div class="maison">
+        <img src="images/porte_chambre.jpg" alt="Porte intérieure">
+        <p>Porte intérieure récente → Sécurité et confort.</p>
+      </div>
+      <div class="maison">
+        <img src="images/salon_interieur.jpg" alt="Salon lumineux avec fenêtres grillagées">
+        <p>Salon carrelé, bien ventilé, idéal pour la famille.</p>
+      </div>
     </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600585153861-28f14e1a0ae8?auto=format&fit=crop&w=800&q=80" alt="Parcelle à vendre">
-      <h3 data-fr="Parcelle à vendre" data-en="Plot for Sale">Parcelle à vendre</h3>
+  </section>
+
+  <section id="temoignages">
+    <h2>Témoignages clients</h2>
+    <div class="temoignage">
+      <img src="images/client1.jpg" alt="Client satisfait">
+      <blockquote>"Grâce à JKC Immo, j’ai trouvé rapidement une maison pour ma famille."</blockquote>
+      <p>- Augustin, Ouidah</p>
     </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Terrain agricole">
-      <h3 data-fr="Terrain agricole" data-en="Agricultural Land">Terrain agricole</h3>
+    <div class="temoignage">
+      <img src="images/client2.jpg" alt="Cliente heureuse">
+      <blockquote>"Service rapide et sérieux — je recommande !"</blockquote>
+      <p>- Clarisse, Pahou</p>
     </div>
-  </div>
-</section><section id="temoignages" class="section">
-  <h2 data-fr="Témoignages de nos clients" data-en="Client Testimonials">Témoignages de nos clients</h2>
-  <p data-fr="\"JKC Immo m'a aidé à trouver la maison parfaite !\" – Alice" data-en="\"JKC Immo helped me find my perfect home!\" – Alice">"JKC Immo m'a aidé à trouver la maison parfaite !" – Alice</p>
-</section><section id="contact" class="section">
-  <h2 data-fr="Contactez-nous" data-en="Contact Us">Contactez-nous</h2>
-  <form action="https://formsubmit.co/jeunesseconsciente977@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Votre nom / Your Name" required>
-    <input type="email" name="email" placeholder="Votre email / Your Email" required>
-    <textarea name="message" rows="5" placeholder="Votre message / Your Message" required></textarea>
-    <button type="submit" data-fr="Envoyer" data-en="Send">Envoyer</button>
-  </form>
-  <p><a href="https://wa.me/2290164625585" target="_blank">📱 WhatsApp</a></p>
-</section><footer>
-  <p>📍 Ouidah, Bazounkpa — 📞 +229 01 64 62 55 85</p>
-  <p>📧 jeunesseconsciente977@gmail.com</p>
-  <p>© 2025 JKC Immo</p>
-</footer><script>
-function setLang(lang) {
-  document.querySelectorAll('[data-fr]').forEach(el => {
-    el.textContent = el.dataset[lang];
-  });
-}
-</script></body>
-</html>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <form action="mailto:jeunesseconsciente977@gmail.com" method="POST" enctype="text/plain">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required />
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+    <p>Ou <a href="https://wa.me/2290164625585" target="_blank">Contact WhatsApp</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JKC Immo | Bazounkpa, Ouidah</p>
+    <p>Contact : +229 01 64 62 55 85 • jeunesseconsciente977@gmail.com</p>
+  </footer>
+</body>
+                              </html>
