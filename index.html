@@ -1,81 +1,63 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JKC Immo - L'immobilier à votre image</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1>JKC Immo</h1>
     <p>L'immobilier à votre image</p>
     <nav>
-      <a href="#accueil">Accueil</a>
-      <a href="#biens">Biens</a>
-      <a href="#temoignages">Témoignages</a>
-      <a href="#contact">Contact</a>
-      <a href="?lang=en">English</a>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-  </header>
-
-  <section id="accueil">
+  </header>  <section id="accueil">
     <h2>Bienvenue chez JKC Immo</h2>
-    <p>Location et vente de maisons, parcelles et boutiques à Ouidah (Bazounkpa). Qualité et service au cœur de notre engagement.</p>
-  </section>
-
-  <section id="biens">
-    <h2>Nos logements disponibles</h2>
+    <p>Spécialiste de la vente et location de maisons, appartements, boutiques et terrains agricoles à Ouidah.</p>
+  </section>  <section id="galerie">
+    <h2>Nos Biens Immobiliers</h2>
     <div class="galerie">
-      <div class="maison">
-        <img src="images/maison_ext1.jpg" alt="Maison avec plusieurs chambres à louer">
-        <p>Maison 2–3 chambres, couloir, cuisine, douche → Quartier calme, Bazounkpa.</p>
-      </div>
-      <div class="maison">
-        <img src="images/porte_chambre.jpg" alt="Porte intérieure">
-        <p>Porte intérieure récente → Sécurité et confort.</p>
-      </div>
-      <div class="maison">
-        <img src="images/salon_interieur.jpg" alt="Salon lumineux avec fenêtres grillagées">
-        <p>Salon carrelé, bien ventilé, idéal pour la famille.</p>
-      </div>
+      <img src="images/maison_ext.jpg" alt="Maison avec plusieurs chambres à louer">
+      <img src="images/porte_int.jpg" alt="Porte intérieure de la maison">
+      <img src="images/salon.jpg" alt="Salon spacieux avec carreaux clairs">
     </div>
-  </section>
-
-  <section id="temoignages">
-    <h2>Témoignages clients</h2>
+  </section>  <section id="temoignages">
+    <h2>Témoignages de nos clients</h2>
     <div class="temoignage">
-      <img src="images/client1.jpg" alt="Client satisfait">
-      <blockquote>"Grâce à JKC Immo, j’ai trouvé rapidement une maison pour ma famille."</blockquote>
-      <p>- Augustin, Ouidah</p>
+      <img src="images/client1.jpg" alt="Photo d'un client satisfait">
+      <blockquote>"JKC Immo m'a trouvé une maison confortable à Ouidah à un prix abordable. Je recommande vivement !"</blockquote>
+      <p>- Mireille A.</p>
     </div>
     <div class="temoignage">
-      <img src="images/client2.jpg" alt="Cliente heureuse">
-      <blockquote>"Service rapide et sérieux — je recommande !"</blockquote>
-      <p>- Clarisse, Pahou</p>
+      <img src="images/client2.jpg" alt="Photo d'un autre client satisfait">
+      <blockquote>"Grâce à JKC Immo, j’ai acquis une parcelle pour mon projet agricole. Service rapide et efficace."</blockquote>
+      <p>- Rodrigue T.</p>
     </div>
-  </section>
-
-  <section id="contact">
+  </section>  <section id="contact">
     <h2>Contactez-nous</h2>
-    <form action="mailto:jeunesseconsciente977@gmail.com" method="POST" enctype="text/plain">
+    <form action="mailto:jeunesseconsciente977@gmail.com" method="post" enctype="text/plain">
       <label for="nom">Nom :</label>
-      <input type="text" id="nom" name="nom" required />
+      <input type="text" id="nom" name="nom" required><br><label for="email">Email :</label>
+  <input type="email" id="email" name="email" required><br>
 
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email" required />
+  <label for="message">Message :</label>
+  <textarea id="message" name="message" required></textarea><br>
 
-      <label for="message">Message :</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+  <button type="submit">Envoyer</button>
+</form>
+<p><a href="https://wa.me/2290164625585" target="_blank">Discuter via WhatsApp</a></p>
 
-      <button type="submit">Envoyer</button>
-    </form>
-    <p>Ou <a href="https://wa.me/2290164625585" target="_blank">Contact WhatsApp</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 JKC Immo | Bazounkpa, Ouidah</p>
-    <p>Contact : +229 01 64 62 55 85 • jeunesseconsciente977@gmail.com</p>
+  </section>  <footer>
+    <p>© 2025 JKC Immo - Ouidah, quartier Bazounkpa</p>
+    <div class="lang-switch">
+      <a href="index_en.html">🇬🇧 English</a>
+    </div>
   </footer>
 </body>
-                              </html>
+              </html>
