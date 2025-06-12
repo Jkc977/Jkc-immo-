@@ -1,63 +1,178 @@
 <!DOCTYPE html><html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JKC Immo - L'immobilier à votre image</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JKC Immo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #e0e0e0;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #f0f0f0;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero button {
+      padding: 10px 20px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .section {
+      padding: 40px 20px;
+    }
+    .properties, .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .testimonial img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+      font-size: 0.9em;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      text-decoration: none;
+      font-size: 28px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>JKC Immo</h1>
-    <p>L'immobilier à votre image</p>
+    <div class="logo">
+      <img src="https://img.icons8.com/ios-filled/50/000000/real-estate.png" alt="logo">
+      <div>
+        <strong>JKC IMMO</strong><br />
+        <small>L'immobilier à votre image</small>
+      </div>
+    </div>
     <nav>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#galerie">Galerie</a></li>
-        <li><a href="#temoignages">Témoignages</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#">ACCUEIL</a>
+      <a href="#">À PROPOS</a>
+      <a href="#">SERVICES</a>
     </nav>
-  </header>  <section id="accueil">
-    <h2>Bienvenue chez JKC Immo</h2>
-    <p>Spécialiste de la vente et location de maisons, appartements, boutiques et terrains agricoles à Ouidah.</p>
-  </section>  <section id="galerie">
-    <h2>Nos Biens Immobiliers</h2>
-    <div class="galerie">
-      <img src="images/maison_ext.jpg" alt="Maison avec plusieurs chambres à louer">
-      <img src="images/porte_int.jpg" alt="Porte intérieure de la maison">
-      <img src="images/salon.jpg" alt="Salon spacieux avec carreaux clairs">
+  </header>  <section class="hero">
+    <h1>Trouvez la propriété de vos rêves</h1>
+    <p>Explorez des maisons disponibles à la location avec JKC Immo.</p>
+    <button>Contact</button>
+  </section>  <section class="section">
+    <h2 style="text-align: center;">Maisons disponibles</h2>
+    <div class="properties">
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2020/01/14/13/29/home-4766632_1280.jpg" alt="Maison 1">
+        <div class="card-content">
+          <h3>Maison à frie</h3>
+          <p>350 € / mois</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/08/19/20/59/house-1601892_1280.jpg" alt="Maison 2">
+        <div class="card-content">
+          <h3>Maison côtière</h3>
+          <p>500 € / mois</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2017/08/06/00/03/bedroom-2588049_1280.jpg" alt="Chambre">
+        <div class="card-content">
+          <h3>Du bandralemare</h3>
+          <p>Chambre moderne</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2015/06/01/23/30/kitchen-794172_1280.jpg" alt="Cuisinette">
+        <div class="card-content">
+          <h3>Cuzinetteve</h3>
+          <p>Cuisine équipée</p>
+        </div>
+      </div>
     </div>
-  </section>  <section id="temoignages">
-    <h2>Témoignages de nos clients</h2>
-    <div class="temoignage">
-      <img src="images/client1.jpg" alt="Photo d'un client satisfait">
-      <blockquote>"JKC Immo m'a trouvé une maison confortable à Ouidah à un prix abordable. Je recommande vivement !"</blockquote>
-      <p>- Mireille A.</p>
+  </section>  <section class="section">
+    <h2 style="text-align: center;">Témoignages</h2>
+    <div class="testimonials">
+      <div class="card testimonial">
+        <div class="card-content" style="text-align: center;">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1">
+          <p>Très satisfait du service ! La maison correspondait exactement à ce que je recherchais.</p>
+          <strong>Aline C.</strong>
+        </div>
+      </div>
+      <div class="card testimonial">
+        <div class="card-content" style="text-align: center;">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client 2">
+          <p>Processus de location simple et rapide. Je recommande JKC Immo !</p>
+          <strong>Gilbert D.</strong>
+        </div>
+      </div>
     </div>
-    <div class="temoignage">
-      <img src="images/client2.jpg" alt="Photo d'un autre client satisfait">
-      <blockquote>"Grâce à JKC Immo, j’ai acquis une parcelle pour mon projet agricole. Service rapide et efficace."</blockquote>
-      <p>- Rodrigue T.</p>
-    </div>
-  </section>  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <form action="mailto:jeunesseconsciente977@gmail.com" method="post" enctype="text/plain">
-      <label for="nom">Nom :</label>
-      <input type="text" id="nom" name="nom" required><br><label for="email">Email :</label>
-  <input type="email" id="email" name="email" required><br>
-
-  <label for="message">Message :</label>
-  <textarea id="message" name="message" required></textarea><br>
-
-  <button type="submit">Envoyer</button>
-</form>
-<p><a href="https://wa.me/2290164625585" target="_blank">Discuter via WhatsApp</a></p>
-
-  </section>  <footer>
-    <p>© 2025 JKC Immo - Ouidah, quartier Bazounkpa</p>
-    <div class="lang-switch">
-      <a href="index_en.html">🇬🇧 English</a>
-    </div>
+  </section>  <a href="https://wa.me/2290164625585?text=Bonjour%20JKC%20Immo" class="whatsapp-btn" target="_blank">
+    💬
+  </a>  <footer>
+    © 2025 JKC Immo – Tous droits réservés | Commune de Ouidah, quartier Bazounkpa
   </footer>
 </body>
   </html>
